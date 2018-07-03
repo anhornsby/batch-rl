@@ -42,6 +42,7 @@ np.random.seed(42)
 # we'll always bootstrap. We just have to make sure that gamma is high (to ensure long term value) but not 1
 # (to ensure the action values are finite).
 
+
 def cartpole_shape_reward(done, success=0, failure=-1):
     """Shape the reward"""
 

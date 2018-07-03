@@ -12,6 +12,14 @@ from sklearn.ensemble import RandomForestRegressor
 from xgboost import XGBRegressor
 from sklearn.model_selection import GridSearchCV
 
+# TO DO list
+# TODO: find way to stabilise agent after repeated training iterations
+# TODO: create offline evaluation measure
+# TODO: correlate offline evaluation measure with online
+# TODO: create policy gradient model for predicting over actions
+# TODO: code in tensorflow?
+
+
 CONFIG = {
 
     # open AI
@@ -43,7 +51,7 @@ CONFIG = {
 
     # model
     'model_param_grid': {'alpha': [0.00001]},
-    'model': LinearRegression()
+    'model': LinearRegression() # XGBRegressor(booster='gblinear', n_estimaors=100)
 # RandomForestRegressor() #DecisionTreeRegressor() # XGBRegressor() # MLPRegressor([100], 'logistic', solver='sgd', learning_rate_init=0.001)
 }
 
