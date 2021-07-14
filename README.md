@@ -34,6 +34,12 @@ Plots of the bellman loss for each timestep and the mean number of timesteps for
 
 You will probably see that the model is quite unstable, in that it will frequently learn and then forget the optimal solution over subsequent iterations.
 
+## Technologies used
+
+* Python
+* Open AI gym
+* scikit-learn
+
 ## Contact
 
 Please leave an issue/PR if you discover any issues.
