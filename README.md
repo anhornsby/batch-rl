@@ -7,6 +7,8 @@ The aim of batch reinforcement learning is to learn the optimal policy using off
 Fitted Q Iteration learns the optimal policy by continuously retraining agents on batches of observations collected from the environment. The agent is initialised with a random policy, acts in the environment for `n_episodes`, and a Q learning agent is subsequently re-trained on those episodes. This process
 repeated for `n_iterations`. 
 
+In this example, we use Fitted Q Iteration to learn the optimal solution to the cart pole balancing task.
+
 ## Running
 
 The model training process can be started by running:
@@ -31,3 +33,9 @@ The others probably don't need to be changed.
 Plots of the bellman loss for each timestep and the mean number of timesteps for each simulation will be saved to `plots/`.
 
 You will probably see that the model is quite unstable, in that it will frequently learn and then forget the optimal solution over subsequent iterations.
+
+## Contact
+
+Please leave an issue/PR if you discover any issues.
+
+Find out more about my work at my website [https://anhornsby.github.io/](https://anhornsby.github.io/)
